@@ -1,16 +1,16 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
 
 :root {
-  --font-space-grotesk: 'Space Grotesk', sans-serif;
   --color-glass: rgba(255, 255, 255, 0.05);
   --color-glass-border: rgba(255, 255, 255, 0.1);
   --ease-physics: cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 body {
-  font-family: var(--font-space-grotesk);
   background-color: #000;
   color: #fff;
   overflow-x: hidden;
